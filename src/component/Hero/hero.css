@@ -1,0 +1,94 @@
+.heroWrapper {
+  margin-top: 100px;
+}
+.heroWrapper .content {
+  max-width: 1381px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+.heroWrapper .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 100px;
+}
+.rightSecion {
+  position: relative;
+}
+.leftSection {
+  max-width: 529px;
+  position: relative;
+}
+.leftSection p {
+  margin: 30px 0 33px 0px;
+}
+.leftSection button {
+  padding: 20px 40px;
+  background: #2639ed;
+  border-radius: 60px;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.065em;
+  color: #ffffff;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+.rightSecion .circleWrapper {
+  position: absolute;
+  left: -58px;
+  width: 129px;
+  height: 129px;
+  background: #dae9ff;
+  border-radius: 50%;
+  z-index: -1;
+}
+.leftSection img {
+  position: absolute;
+  bottom: -120px;
+  left: 0;
+  z-index: -1;
+}
+.squareWrapper {
+  position: absolute;
+  width: 178px;
+  height: 178px;
+  background: #fff5db;
+  border-radius: 0px 0px 100px 0px;
+  right: 0;
+  bottom: -84px;
+  z-index: -1;
+}
+@media screen and (max-width: 1024px) {
+  .rightSecion img {
+    min-width: 350px;
+  }
+  .leftSection button {
+    padding: 10px 20px;
+  }
+  .heroWrapper .wrapper {
+    column-gap: 80px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .heroWrapper .content {
+    padding-left: 0;
+  }
+  .heroWrapper .wrapper {
+    flex-direction: column-reverse;
+  }
+  .leftSection {
+    max-width: auto;
+    text-align: center;
+    padding: 0 15px;
+    margin-top: 20px;
+  }
+  .rightSecion img {
+    min-width: auto;
+  }
+  .leftSection img,
+  .circleWrapper,
+  .squareWrapper {
+    display: none;
+  }
+}

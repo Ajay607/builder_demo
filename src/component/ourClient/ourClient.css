@@ -1,0 +1,75 @@
+.outClientWrapper {
+  width: 100%;
+  margin: 106px 0px 120px 0px;
+}
+.outClientWrapper .wrapper {
+  max-width: 1396px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 80px;
+  overflow: hidden;
+}
+.outClientWrapper .imgsWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 88px;
+  align-items: center;
+}
+.outClientWrapper .content {
+  max-width: 354px;
+  width: 100%;
+}
+
+.outClientWrapper .content p {
+  margin-top: 6px;
+}
+@media screen and (max-width: 1024px) {
+  .outClientWrapper .wrapper {
+    column-gap: 40px;
+  }
+  .outClientWrapper .imgsWrapper {
+    column-gap: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .outClientWrapper .wrapper {
+    display: block;
+  }
+  .outClientWrapper .content {
+    text-align: center;
+    max-width: none;
+  }
+  .outClientWrapper {
+    margin: 60px 0px 40px 0px !important;
+  }
+  .outClientWrapper .imgsWrapper {
+    margin-top: 20px;
+    gap: 30px;
+  }
+  .outClientWrapper .imgsWrapper > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .helpBusinessWrapper .textWrapper {
+    padding-bottom: 60px !important;
+  }
+  .swiper-slide, swiper-slide{
+    display: flex !important;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .swiper-pagination{
+    display: none;
+  }
+}
+@media screen and (max-width: 567px) {
+  .outClientWrapper .imgsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 26px;
+  }
+  
+}
+

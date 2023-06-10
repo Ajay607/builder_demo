@@ -1,0 +1,169 @@
+.clientReviewWrapper {
+  width: 100%;
+  margin-top: 146px;
+  margin-bottom: 246px;
+  max-width: 1381px;
+  margin: 0 auto;
+  margin-top: 170px;
+  margin-bottom: 112px;
+}
+.clientReviewWrapper .title,
+.clientReviewWrapper .desc {
+  text-align: center;
+}
+
+.clientReviewWrapper .desc {
+  margin-bottom: 71px;
+  margin: 15px;
+}
+
+.clientReviewWrapper .content {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+  height: 460px;
+  padding-left: 30px;
+}
+.clientReviewWrapper .imgWrapperSlider {
+  position: relative;
+}
+.clientReviewWrapper .imgWrapperSlider .profile {
+  filter: drop-shadow(10px 20px 50px rgba(0, 0, 0, 0.15));
+  max-width: 404px;
+}
+.clientReviewWrapper .imgWrapperSlider .dots {
+  max-width: 198px;
+}
+.clientReviewWrapper .pinkCircle {
+  position: absolute;
+  width: 121.52px;
+  height: 120px;
+  left: 33px;
+  bottom: 39px;
+  border: 8.8px solid #ff007a;
+  border-radius: 50%;
+  z-index: -1;
+}
+.clientReviewWrapper .dots {
+  z-index: -1;
+  position: absolute;
+  right: 10px;
+  top: -13px;
+}
+.textContent {
+  width: 416.21px;
+}
+.clientReviewWrapper .carousel .control-dots {
+  bottom: 53px;
+  right: 200px;
+  width: auto;
+}
+.clientReviewWrapper .carousel .control-dots .dot {
+  background-color: #e7f0fc;
+  width: 16px;
+  height: 16px;
+}
+.clientReviewWrapper .carousel .control-dots .dot.selected {
+  background: #2639ed;
+}
+.clientReviewWrapper .sliderHeading {
+  text-align: left;
+  font-size: 24px;
+  line-height: 36px;
+}
+.sliderWrapper {
+  width: 70%;
+}
+.imgWrapperRight {
+  width: 30%;
+  position: relative;
+}
+
+.clientReviewWrapper .sliderDesc {
+  text-align: left;
+  font-size: 16px;
+  line-height: 160%;
+  color: #565656;
+  margin-top: 15px;
+}
+.clientReviewWrapper .imagesWrapper {
+  position: relative;
+}
+.clientReviewWrapper .bgCircle {
+  z-index: -1;
+  position: absolute;
+  width: 186.33px;
+  height: 184px;
+  left: 10px;
+  background: #fff5db;
+  border-radius: 50%;
+  bottom: 55px;
+  left: 28px;
+}
+@media screen and (max-width: 1200px) {
+  .clientReviewWrapper .content {
+    column-gap: 40px;
+    padding-left: 0;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .clientReviewWrapper .carousel .control-dots {
+    bottom: -8px;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clientReviewWrapper .content {
+    height: auto;
+    display: block;
+  }
+  .sliderWrapper,
+  .imgWrapperRight {
+    width: 100%;
+  }
+  .imgWrapperRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .carousel.carousel-slider {
+    height: 585px;
+  }
+  .clientReviewWrapper .carousel .control-dots {
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, 114%);
+    display: flex;
+  }
+  .clientReviewWrapper .dots {
+    display: none;
+  }
+  .clientReviewWrapper .pinkCircle {
+    display: none;
+  }
+  .textContent {
+    width: auto;
+  }
+  .clientReviewWrapper .sliderHeading,
+  .clientReviewWrapper .sliderDesc {
+    text-align: center;
+  }
+
+  .clientReviewWrapper .carousel .control-dots {
+    width: 100%;
+    justify-content: center;
+  }
+  .clientReviewWrapper .carousel .control-dots {
+    transform: translate(-50%, 91%);
+  }
+  .clientReviewWrapper {
+    margin-top: 62px;
+  }
+  .clientReviewWrapper .textContent {
+    padding: 0 15px;
+  }
+}

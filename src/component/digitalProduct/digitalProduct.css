@@ -1,0 +1,86 @@
+.digitalWrapper {
+  width: 100%;
+  margin-top: 146px;
+}
+.digitalWrapper .content {
+  display: flex;
+  align-items: center;
+  max-width: 1381px;
+  padding-right: 20px;
+  margin: 0 auto;
+  column-gap: 80px;
+}
+.digitalWrapper .textWrapper {
+  max-width: 596px;
+}
+
+.digitalWrapper .textWrapper p {
+  margin-top: 8px;
+}
+.digitalWrapper .videoWrapper,
+.digitalWrapper .textWrapper {
+  position: relative;
+}
+.digitalWrapper .videoWrapper .video {
+  border-radius: 32px;
+}
+.digitalWrapper .playBtnWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.digitalWrapper .textWrapper .rightBox {
+  width: 178px;
+  height: 178px;
+  background: #eff1ff;
+  border-radius: 0px 0px 100px 0px;
+  position: absolute;
+  z-index: -1;
+  top: 6px;
+}
+.digitalWrapper .roundedCircle {
+  width: 140.65px;
+  height: 130.18px;
+  position: absolute;
+  right: -54px;
+  bottom: -68px;
+  background: #fff5db;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1200px) {
+  .digitalWrapper .content {
+    column-gap: 40px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .digitalWrapper .videoWrapper .video {
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .digitalWrapper .videoWrapper .video {
+    min-width: auto;
+  }
+  .digitalWrapper .content {
+    flex-direction: column;
+  }
+  .digitalWrapper .content {
+    padding: 0;
+  }
+  .digitalWrapper .textWrapper {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .digitalWrapper {
+    margin-top: 60px;
+  }
+  .digitalWrapper .roundedCircle {
+    display: none;
+  }
+  .digitalWrapper .content {
+    padding: 0px 15px;
+  }
+}

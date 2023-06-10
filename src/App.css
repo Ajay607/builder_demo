@@ -1,0 +1,164 @@
+/* reset start */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: none;
+
+  &::before {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  &::after {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  @font-face {
+    font-family: Averta Demo PE Cutted Demo;
+    src: url("./assets/fonts");
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+html {
+  &:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  &:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.builder-block {
+  margin-top: 0px !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    &:focus-within {
+      scroll-behavior: auto;
+    }
+  }
+
+  * {
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
+
+    &::before {
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      transition-duration: 0.01ms;
+      scroll-behavior: auto;
+    }
+
+    &::after {
+      animation-duration: 0.01ms;
+      animation-iteration-count: 1;
+      transition-duration: 0.01ms;
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@font-face {
+  font-family: "averta_demoextrabold_italic";
+  src: url("../src/assets/fonts/avertademo-extrabolditalic-webfont.woff2")
+      format("woff2"),
+    url("../src/assets/fonts/avertademo-extrabolditalic-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "averta_demoregular";
+  src: url("../src/assets/fonts/avertademo-regular-webfont.woff2")
+      format("woff2"),
+    url("../src/assets/fonts/avertademo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-size: 40px;
+  line-height: 60px;
+  color: #000000;
+}
+p {
+  font-size: 16px;
+  line-height: 160%;
+  color: #565656;
+}
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 32px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
